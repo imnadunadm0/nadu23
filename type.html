@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title> Type setting -by nadun </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Sinhala:wght@100;900&display=swap" rel="stylesheet">
+    <style>
+      
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Noto Serif Sinhala', cursive;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  height:100vh;
+  background:#000;
+}
+div{
+  width:500px;
+  height:60px;
+  background:black;
+  color:#fff;
+  text-align:center;
+  line-height:60px;
+  font-size:24px;
+  font-weight:bold;
+  position:relative;
+  cursor:pointer;
+}
+div:before,div:after{
+  content:'';
+  position:absolute;
+  width:calc(100% + 8px);
+  height:calc(100% + 8px);
+  background-image:linear-gradient(45deg ,#db0094, #0000ff, #ffff00, #ff0000, #db0094, #0000ff, #ffff00, #ff0000);
+  left:-4px;
+  top:-4px;
+  z-index:-1;
+  background-size:500%;
+  animation: animationBackground 20s infinite;
+
+}
+div:hover:before{
+  animation:animationBackground 5s infinite;
+}
+div:after{
+  animation:animationBackground 20s infinite;
+  filter:blur(10px); 
+}
+
+
+/**button*/
+button{
+  margin-top:120px;
+  width:200px;
+  height:50px;
+  background:transparent;
+  border:none;
+  outline:none;
+  position:relative;
+  color:#fff;
+  font-size:20px;
+  font-weight:bold;
+  transition:.3s all;
+}
+
+button:after{
+  content:'';
+  position:absolute;
+  width:100%;
+  height:100%;
+  border-radius:20px;
+  left:0;
+  top:0;
+  background:linear-gradient(to left, #db0094, #0000ff, #ffff00, #ff0000);
+  z-index:-1;
+  animation: animationBackground 15s infinite;
+  background-size:1000%;
+  filter:blur(2px);
+}
+button:active{
+  color:red;
+  transform:translate(-10px,10px);
+}
+
+@keyframes animationBackground{
+  0%{
+    background-position: 0 0;
+  }
+  50%{
+    background-position: 300% 0;
+  }
+  100%{
+    background-position: 0 0;
+  }
+}
+    </style>
+      
+  </head>
+ <body>
+   <div>සිංහල හා English  ටයිප් සෙටිග්ස්</div>
+<a href='https://wa.me/+94759080516'><button  > click Whatsapp </button><a>
+  </body>
+  </html>
